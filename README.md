@@ -1,15 +1,15 @@
 # Nuclear :atom_symbol:
 
-_[![nuget-clear version](https://img.shields.io/nuget/v/nuget-clear.svg?style=flat&label=NuGet:%20nuget-clear)](https://www.nuget.org/packages/nuget-clear)_
+_[![nuget-clear version](https://img.shields.io/nuget/v/nuget-clear.svg?style=flat&label=NuGet:%20nuget-clear-fork)](https://www.nuget.org/packages/nuget-clear)_
 
-Does your NuGet package have too many versions? Do you want to bulk delete or unlist them? Do it quickly using [Nuclear](https://www.nuget.org/packages/nuget-clear)!
+Does your NuGet package have too many versions? Do you want to bulk delete or unlist them? Do it quickly using [Nuclear](https://www.nuget.org/packages/nuget-clear-fork)!
 
 ## Installation
 
 You can install `nuclear` as a [.NET tool](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools):
 
 ```
-dotnet tool install --global nuget-clear --version 1.0.0-preview1
+dotnet tool install --global nuget-clear-fork --version 1.0.0-preview3
 ```
 
 ## Examples
@@ -97,3 +97,6 @@ Options:
 * `-s, --source` - The NuGet package source URL. Defaults to `https://api.nuget.org/v3/index.json`.
 * `-k, --api-key` - The API key to authenticate on the package source.
 * `--dry-run` - Show what would be deleted.
+
+## About this fork
+I wanted to remove all versions from certain packages, but the command kept stopping removing versions whenever an error occured (usually a 404 on a package version), so this fork just wraps the delete command in a `try..catch` in order to keep it going.
