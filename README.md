@@ -1,6 +1,6 @@
 # Nuclear :atom_symbol:
 
-_[![nuget-clear version](https://img.shields.io/nuget/v/nuget-clear.svg?style=flat&label=NuGet:%20nuget-clear-fork)](https://www.nuget.org/packages/nuget-clear)_
+_[![nuget-clear-fork version](https://img.shields.io/nuget/v/nuget-clear-fork.svg?style=flat&label=NuGet:%20nuget-clear-fork)](https://www.nuget.org/packages/nuget-clear-fork)_
 
 Does your NuGet package have too many versions? Do you want to bulk delete or unlist them? Do it quickly using [Nuclear](https://www.nuget.org/packages/nuget-clear-fork)!
 
