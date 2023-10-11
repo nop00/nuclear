@@ -10,7 +10,7 @@
 
   <PropertyGroup>
     <PackageIcon>packageIcon.png</PackageIcon>
-    <PackageId>nuget-clear</PackageId>
+    <PackageId>nuget-clear-fork</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>nuget; baget</PackageTags>
 
