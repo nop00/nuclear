@@ -92,13 +92,17 @@ namespace Nuclear
 
                         if (!settings.DryRun)
                         {
-                            await updateResource.Delete(
-                                packageId,
-                                packageVersion,
-                                getApiKey: packageSource => settings.ApiKey,
-                                confirm: packageSource => true,
-                                noServiceEndpoint: false,
-                                logger);
+                            try {
+                                await updateResource.Delete(
+                                    packageId,
+                                    packageVersion,
+                                    getApiKey: packageSource => settings.ApiKey,
+                                    confirm: packageSource => true,
+                                    noServiceEndpoint: false,
+                                    logger);
+                            } catch (Exception ex) {
+                                AnsiConsole.MarkupLine($"Warning: problem during version deletion. {ex.Message}");
+                            }
                         }
 
                         task.Increment(100.0 / pending.Count);
