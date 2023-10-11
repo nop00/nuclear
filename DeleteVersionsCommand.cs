@@ -100,7 +100,7 @@ namespace Nuclear
                                     confirm: packageSource => true,
                                     noServiceEndpoint: false,
                                     logger);
-                            } catch (Exception ex) {
+                            } catch (System.Exception ex) {
                                 AnsiConsole.MarkupLine($"Warning: problem during version deletion. {ex.Message}");
                             }
                         }
